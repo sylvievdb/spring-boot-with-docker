@@ -5,7 +5,9 @@ https://github.com/sylvievdb/spring-boot-with-docker
 https://spring.io/guides/gs/spring-boot-docker/
 
 ##Spring boot applicatie opstarten zonder docker
-java -jar target/spring-boot-with-docker.1.0-SNAPSHOT.jar --server.port=8090
+java -jar target/spring-boot-with-docker.1.0-SNAPSHOT.jar
+
+Applicatie bereikbaar via localhost:8090
 
 ##Opzetten docker met chocolatey
 https://hemanshubhojak.com/2016/05/11/settingup-docker-windows-chocolatey.html
@@ -41,3 +43,5 @@ _SQL>quit_
 
 ##Opstarten applicatie via docker
 docker run -d -p 8090:8090 --name springboot -t sylvievdb/spring-boot-with-docker
+
+Applicatie bereikbaar via <ip-docker-machine>:8090
